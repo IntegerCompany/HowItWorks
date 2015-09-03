@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+    <title>Результат - Сайт</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <style type="text/css">
+
+        * {
+            outline: none;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            background: #fff;
+            min-width: 1000px;
+            margin: 0;
+            padding: 0;
+            font: 13px Verdana, Helvetica, sans-serif;
+            color: #000;
+            overflow-y: visible;
+        }
+
+        h1, h3, h4, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            border: none;
+        }
+
+        .clear {
+            display: block;
+            clear: both;
+            font-size: 0;
+            height: 0;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .nowrap {
+            white-space: nowrap;
+        }
+
+        #middle {
+            min-height: 100%;
+        }
+
+        #middle > div {
+            min-height: 0;
+            background: none;
+            border: none;
+        }
+
+        #middle > div > div, #content {
+            margin: 0 auto;
+        }
+
+        #middle > div > div {
+            width: 1000px;
+            margin: 0 auto;
+            background: none;
+            padding: 0;
+        }
+
+        #content {
+            background: none;
+            width: 998px;
+            min-height: 480px;
+            padding: 0;
+        }
+
+        
+.arial, .uid {
+    font-family: arial, sans-serif;
+    font-size: 16px;
+}
+
+.v-top {
+    vertical-align: top;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.w1 {
+    width: 1%;
+}
+
+.w-right {
+    width: 160px;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.uid {
+    font-size: 28px;
+    white-space: nowrap;
+}
+
+.order_num {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.address {
+    font: 13px 'Times New Roman', Times, serif;
+}
+
+.ticket_info {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#content .result h2 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+#content .better_print {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#content .controls {
+    text-align: center;
+}
+
+#content .controls button {
+    font-size: 22px;
+    padding: 5px 20px;
+    margin-left: 20px;
+}
+
+.cheque {
+    padding-bottom: 20px;
+}
+
+.cheque .text h3, .cheque .text p, .cheque-text {
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.cheque .text p {
+    font-size: 18px;
+    margin: 5px 0 10px;
+    line-height: 1.5;
+}
+
+.cheque .text h3, .cheque-text {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.cheque .text b {
+    font-size: 24px;
+}
+
+.cheque .blank {
+    border-top: 1px dashed;
+    border-bottom: 1px dashed;
+    padding: 10px;
+}
+
+.cheque .blank .header {
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.cheque .blank .orderDate {
+    font-size: 14px;
+}
+
+.cheque .blank .barcode {
+    padding-bottom: 5px;
+}
+
+.cheque .blank table {
+    width: 100%;
+    background: #000;
+    border-collapse: collapse;
+}
+
+.cheque .blank table tr {
+    background: #fff;
+}
+
+.cheque .blank table td, .cheque .blank table th {
+    padding: 2px 5px;
+    border: 1px solid;
+}
+
+.cheque .blank table th {
+    text-align: left;
+}
+
+.cheque .blank table.info th {
+    font-weight: normal;
+    width: 225px;
+}
+
+.cheque .blank table.info td, .cheque .blank table.places th {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.cheque .blank .places {
+    margin-top: 10px;
+}
+
+.cheque .blank .places span {
+    font-weight: normal;
+}
+
+.cheque .blank .prices {
+    padding: 5px 0 10px;
+}
+
+.cheque .blank .price_info {
+    border: 0;
+    border-collapse: collapse;
+}
+
+.cheque .prices h4 {
+    font-size: 14px;
+}
+
+.cheque .electronic {
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+}
+
+.cheque .electronic .info p {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+.cheque .electronic .part1 tr:first-child {
+    height: 42px;
+}
+
+.cheque .electronic .part2 tr:first-child td {
+    border-top: none;
+}
+
+.cheque .electronic tr:first-child td:first-child {
+    width: 5em;
+}
+
+.cheque .electronic .barcode {
+    padding: 5px 0 0;
+}
+
+.cheque .blank .ch-num-l {
+    white-space: nowrap;
+    border-right: none;
+}
+
+.cheque .blank .ch-num {
+    white-space: nowrap;
+    border-left: none;
+}
+
+.cheque .blank.electronic .ch-num {
+    width: 1px;
+    text-align: right;
+}
+
+#content .return-mrg {
+    margin-bottom: 20px;
+}
+
+.hostName {
+    display: none;
+}
+
+.result_auth {
+
+}
+.result_auth > div {
+    margin: 1em;
+}
+
+@media print {
+    @page {
+        margin: 1cm .5cm;
+    }
+
+    body {
+        background: #fff;
+        overflow-y: visible;
+    }
+
+    #middle > div {
+        min-height: 0;
+        background: none;
+        border: none;
+    }
+
+    #middle > div > div, #content {
+        margin: 0 auto;
+        background: none;
+        padding: 0;
+    }
+
+    #header, #footer, #helloUser, .result, .controls, .version, .no_print, #content > div > p {
+        display: none;
+    }
+
+    .cheque .page-break {
+        page-break-after: always;
+    }
+
+    .testMode .hostName {
+        display: block;
+    }
+}
+
+    </style>
+</head>
+<body>
+<div id="middle">
+    <div>
+        <div>
+            <div id="content">
+                                    <div class="cheque">
+            <div class="text">
+            <h3>Бланк замовлення на друк cплачених<br/>проїзних / перевізних документів</h3>
+        <p><strong>Даний бланк замовлення для проїзду недійсний.</strong> Перед поїздкою необхідно надати цей бланк замовлення у будь-яку автоматизовану квиткову касу <strong>материкової частини України</strong> і роздрукувати проїзні та перевізні документи до відправлення поїзда. За відсутності можливості роздрукувати вміст даного бланка, будь ласка, запишіть ваш номер замовлення із наведеної нижче таблиці.</p>
+    </div>
+<div class="blank" data-doctype="travel">
+    <div class="header">БЛАНК ЗАМОВЛЕННЯ</div>
+    <div class="orderDate">
+        Дата та номер замовлення: 26.08.2015 11:36
+    </div>
+    <div class="clear"></div>
+    <div class="barcode">
+        <div class="header">2ЖЯ-А1-3524031-2608</div>
+					<img width="500" alt="barcode" src="data:image/gif;base64,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"/>
+		    </div>
+            <table class="info">
+    <tr>
+        <th >Станція відправлення:</th>
+        <td>2218000</td>        <td>Львів</td>
+    </tr>
+    <tr>
+        <th >Станція призначення:</th>
+        <td>2218060</td>        <td>Луцьк</td>
+    </tr>
+    <tr>
+        <th colspan="2">Дата та час відправлення:</th>
+        <td>28.08.2015 17:02</td>
+    </tr>
+        <tr>
+        <th class="ch-num-l">Дата та час прибуття:</th>
+        <td class="ch-num">
+                    </td>
+        <td>28.08.2015 19:57</td>
+    </tr>
+    </table>
+<table class="places">
+    <tr>
+        <th>Номер поїзда: 
+                            814 ЛА
+                        Р
+        </th>
+        <th>Вагон: 01 С/2 КЛ ЛЬВ</th>
+                    <th>
+                Місце: 058<span>, Пільговий            </th>
+            </tr>
+            <tr>
+            <th>
+                Матвейчук Любомир
+            </th>
+                            <th colspan="2">
+                    000B3A5C-2BA7-49A9-0001
+                                            СТУД ВК10522157<br/>
+                                    </th>
+                    </tr>
+    </table>
+
+<div class="prices">
+    <h4>ІНФОРМАЦІЯ ПРО ВАРТІСТЬ ЗАМОВЛЕННЯ, ГРН.</h4>
+    <table class="price_info">
+        <tr class="center bold">
+            <td colspan="4">Проїзні документи</td>
+        </tr>
+        <tr class="center bold">
+            <td>№ доку-<br/>мента</td>
+            <td>Місця</td>
+            <td>Вартість проїзного документа, грн. (Тариф,ком.збір,cтрах.збір,ПДВ)</td>
+            <td>Збір за оформлення ППД без ПДВ, грн.</td>
+        </tr>
+                                                                                <tr class="center">
+                <td>1</td>
+                <td>058</td>
+                <td>36,12
+                    + 0,07 (страх.збір)
+                    + 8,40
+                </td>
+                <td>5,83</td>
+            </tr>
+                <tr>
+            <td colspan="2" class="nowrap bold">Загальна вартість</td>
+            <td class="center" colspan="2">50,42</td>
+        </tr>
+    </table>
+</div>
+
+        <div>ГІOЦ УЗ</div>
+</div>
+<div class="hostName">[http://booking.uz.gov.ua/]</div>
+<div class="clear page-break"></div>
+
+        <div class="clear page-break"></div>
+            <div class="text">
+            <h3>Бланк замовлення на друк cплачених<br/>проїзних / перевізних документів</h3>
+        <p><strong>Даний бланк замовлення для проїзду недійсний.</strong> Перед поїздкою необхідно надати цей бланк замовлення у будь-яку автоматизовану квиткову касу <strong>материкової частини України</strong> і роздрукувати проїзні та перевізні документи до відправлення поїзда. За відсутності можливості роздрукувати вміст даного бланка, будь ласка, запишіть ваш номер замовлення із наведеної нижче таблиці.</p>
+    </div>
+<div class="blank" data-doctype="travel">
+    <div class="header">БЛАНК ЗАМОВЛЕННЯ</div>
+    <div class="orderDate">
+        Дата та номер замовлення: 26.08.2015 11:37
+    </div>
+    <div class="clear"></div>
+    <div class="barcode">
+        <div class="header">7Б1-А1-3525267-2608</div>
+					<img width="500" alt="barcode" src="data:image/gif;base64,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"/>
+		    </div>
+            <table class="info">
+    <tr>
+        <th >Станція відправлення:</th>
+        <td>2218060</td>        <td>Луцьк</td>
+    </tr>
+    <tr>
+        <th >Станція призначення:</th>
+        <td>2218000</td>        <td>Львів</td>
+    </tr>
+    <tr>
+        <th colspan="2">Дата та час відправлення:</th>
+        <td>31.08.2015 06:17</td>
+    </tr>
+        <tr>
+        <th class="ch-num-l">Дата та час прибуття:</th>
+        <td class="ch-num">
+                    </td>
+        <td>31.08.2015 09:14</td>
+    </tr>
+    </table>
+<table class="places">
+    <tr>
+        <th>Номер поїзда: 
+                            811 ЛА
+                        Р
+        </th>
+        <th>Вагон: 01 С/2 КЛ ЛЬВ</th>
+                    <th>
+                Місце: 079<span>, Пільговий            </th>
+            </tr>
+            <tr>
+            <th>
+                Матвейчук Любомир
+            </th>
+                            <th colspan="2">
+                    000B3A5C-C387-4A00-0001
+                                            СТУД ВК10522157<br/>
+                                    </th>
+                    </tr>
+    </table>
+
+<div class="prices">
+    <h4>ІНФОРМАЦІЯ ПРО ВАРТІСТЬ ЗАМОВЛЕННЯ, ГРН.</h4>
+    <table class="price_info">
+        <tr class="center bold">
+            <td colspan="4">Проїзні документи</td>
+        </tr>
+        <tr class="center bold">
+            <td>№ доку-<br/>мента</td>
+            <td>Місця</td>
+            <td>Вартість проїзного документа, грн. (Тариф,ком.збір,cтрах.збір,ПДВ)</td>
+            <td>Збір за оформлення ППД без ПДВ, грн.</td>
+        </tr>
+                                                                                <tr class="center">
+                <td>1</td>
+                <td>079</td>
+                <td>33,41
+                    + 0,05 (страх.збір)
+                    + 7,85
+                </td>
+                <td>5,83</td>
+            </tr>
+                <tr>
+            <td colspan="2" class="nowrap bold">Загальна вартість</td>
+            <td class="center" colspan="2">47,14</td>
+        </tr>
+    </table>
+</div>
+
+        <div>ГІOЦ УЗ</div>
+</div>
+<div class="hostName">[http://booking.uz.gov.ua/]</div>
+<div class="clear"></div>
+
+        <div class="clear"></div>
+</div>
+
+                                <div class="clear"></div>
+                <br/>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
